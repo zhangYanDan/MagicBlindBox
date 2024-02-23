@@ -67,6 +67,9 @@ export struct HomeContent {
 
     }.justifyContent(FlexAlign.SpaceBetween).width('86%').margin({top:20})
   }
+  /**
+   * 首页上部分
+   */
   @Builder Top() {
     Stack({alignContent:Alignment.Top}) {
       this.TopHeadFunc()
@@ -78,16 +81,23 @@ export struct HomeContent {
   }
 
 
+  /**
+   * 首页下部分
+   * 立即开箱
+   */
   @Builder Bottom() {
     Stack({ alignContent: Alignment.Top }) {
       Image($r('app.media.open_box_cont'))
         .width('100%')
         .height(166)
       Row({ space: 40 }) {
+        // 免费开箱广告
         Image($r('app.media.open_box_img1'))
           .width(55)
+        // 立即开箱
         Image($r('app.media.open_box_btn'))
           .width(135)
+        // 在线客服
         Image($r('app.media.open_box_img2'))
           .width(48)
       }
@@ -99,9 +109,9 @@ export struct HomeContent {
           Span('￥').fontSize(14).fontColor(0xFFFFFF).fontWeight(FontWeight.Bold)
           Span('69.0').fontSize(20).fontColor(0xFFFFFF).fontWeight(FontWeight.Bold)
         }.padding({ bottom: 6 })
-      }.height(168).alignItems(VerticalAlign.Bottom)
+      }.height(166).alignItems(VerticalAlign.Bottom)
       .zIndex(2)
-    }.height(168)
+    }.height(208)
   }
 
   build() {

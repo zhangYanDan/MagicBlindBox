@@ -92,7 +92,9 @@ struct Index {
         .backgroundColor(0xFFFFFF)
       }
       .tabBar(this.TabBuilder($r('app.string.tab_title_my'), 4, $r('app.media.icon_my_selected'), $r('app.media.icon_my')))
-    }
+    }.onChange((index:number)=>{
+      this.currentIndex=index;
+    })
   }
 }
 
