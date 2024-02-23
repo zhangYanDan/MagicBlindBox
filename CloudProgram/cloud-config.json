@@ -1,0 +1,18 @@
+{
+  "appSelected": {
+    "appId": "5765880207853768307",
+    "appName": "魔晶盲盒",
+    "deviceTypes": [
+      {
+        "deviceType": 4
+      }
+    ],
+    "enableSites": "CN",
+    "installationFree": 0,
+    "packageType": 7,
+    "projectId": "388421841221968885",
+    "projectName": "云开发应用",
+    "siteId": "CN"
+  },
+  "teamId": "150086000136705748"
+}
